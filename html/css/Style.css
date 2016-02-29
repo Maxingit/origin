@@ -1,0 +1,18 @@
+html,
+body {
+  min-width: 1000px;
+  font-size: 14px;
+}
+.center {
+  width: 1000px;
+  margin: 0 auto;
+}
+a:link,
+a:visited {
+  color: #043d6f;
+}
+a:hover,
+a:active {
+  color: #ffc000;
+  text-decoration: none;
+}

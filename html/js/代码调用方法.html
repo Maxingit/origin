@@ -1,0 +1,139 @@
+<!-- jplayer -->
+
+	<!-- script -->
+		<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+		<script>
+		//<![CDATA[
+		$(document).ready(function(){
+			$("#jquery_jplayer_1").jPlayer({
+				ready: function (event) {
+					$(this).jPlayer("setMedia", {
+						mp3:"gequ.mp3" //mp3的播放地址
+					}).jPlayer("play");
+
+				},
+				swfPath: "/js",  		//存放jplayer.swf的决定路径
+				solution:"html, flash", //支持的页面
+				supplied: "mp3",		//支持的音频的格式
+				wmode: "window"
+			});
+		});
+		//]]>
+		</script>
+
+	<!-- dom -->
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+		<div id="jp_container_1" class="jp-audio">
+		<ul class="jp-controls">
+		    <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+		    <li><a href="javascript:;" class="jp-pause" tabindex="1">stop</a></li>
+		</ul>
+		</div>
+
+
+
+
+______________________________________________________________________________
+<!-- MSClass -->
+
+	<!-- script -->
+		<script type="text/javascript" src="js/MSClass.js"></script>
+		<script>
+			new Marquee(["marquee2","marqueein2"],0,1,310,340,40,0,0);
+			 //依次为
+			 //父容器ID 
+			 //子容器ID 
+			 //方向（0：上；1：下；2：左；3：右；）
+			 //滚动的步长(可选,默认值为2,数值越大,滚动越快)
+			 //容器可视宽度	(可选,默认值为容器初始设置的宽度)
+			 //容器可视高度	(可选,默认值为容器初始设置的高度)
+			 //定时器		(可选,默认值为30,数值越小,滚动的速度越快,1000=1秒,建议不小于20)
+			 //间歇停顿延迟时间(可选,默认为0不停顿,1000=1秒)
+			 //开始时的等待时间(可选,默认或0为不等待,1000=1秒)
+			 //间歇滚动间距	(可选,默认为翻屏宽/高度,该数值与延迟均为0则为鼠标悬停控制,-1禁止鼠标控制)
+		</script>
+
+
+
+
+______________________________________________________________________________
+<!-- 百度地图key -->
+
+	<!-- script -->
+ 		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GNSclIGzAQ44ZdKcCxwdtnek"></script>
+
+
+
+______________________________________________________________________________
+<!-- banner -->
+
+	 <!-- dom -->
+		 <div class="banner" id="Banner">
+			<ul class="pic">
+				<li style="background:url(images/en/ban1.jpg) no-repeat center top"></li>
+			</ul>
+		</div>
+
+	<!-- style -->
+		<style>
+		.banner{height: 500px;position: relative;}
+		.banner .pic{min-width:1170px;height: 500px;position: relative;}
+		.banner .pic li{position: absolute;height: 500px;width: 100%;min-width: 1170px;}
+		.banner .btn{position: absolute;top: 450px;left: 50%;z-index: 4;}
+		.banner .btn li{margin-left: 20px;width: 10px;height: 10px;background: #fff;float: left;border-radius: 5px;}
+		.banner .btn .s{background: #bcd420;}
+		</style>
+
+
+
+______________________________________________________________________________
+<!-- tab -->
+
+
+
+______________________________________________________________________________
+<!-- myfocus -->
+	<!-- script -->
+		<script>
+			myFocus.set({
+		    	id:'myFocus',//焦点图盒子ID
+		    	pattern:'mF_luluJQ',//风格应用的名称
+		    	time:3,//切换时间间隔(秒)
+		    	trigger:'mouseover',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+		    	txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+			});
+		</script>
+
+	<!-- dom -->
+		<div id="myFocus">
+			<div class="pic">
+				<ul>
+					<li><a href=""><img src="images/en/index5.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+
+
+______________________________________________________________________________
+<!-- slice -->
+	<!-- script -->
+		<script>
+			var x=$(".newstab a").length;
+		    for (var i =0 ;i<=x; i) {
+		       $(".newstab a").slice(i,i+2).wrapAll("<div class='tab'></div>") 
+		       i=i+2
+		    };
+		</script>
+
+______________________________________________________________________________
+
+<!-- slidetab -->
+	<!-- script -->
+		<script>
+			var sldbox=$(".newstab")
+			var boxwid=600
+			var sldchd=$(".tab")
+			var next=$(".next")
+			var prev=$(".prev")
+		</script>
+		
